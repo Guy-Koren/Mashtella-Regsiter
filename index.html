@@ -1,0 +1,267 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>פיזיקה לפי גיא קורן - לחשוב מחוץ לכתה</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+    <meta name="description"
+          content="מרכז המשתלה בתל אביב הוקם במטרה לתת מסגרת לימודית והענקת כלים יישומיים ללמידה עצמאית ומשמעותית"/>
+    <meta name="keywords" content="גיא קורן"/>
+
+    <meta property="og:title" content="פיזיקה לפי גיא קורן - לחשוב מחוץ לכתה"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:description"
+          content="מרכז המשתלה בתל אביב הוקם במטרה לתת מסגרת לימודית והענקת כלים יישומיים ללמידה עצמאית ומשמעותית"/>
+
+    <style type="text/css">
+
+        html, body {
+            margin: 0 auto;
+            display: block;
+            background-color: #e8e8e8;
+        }
+
+        .input {
+            font-family: Arial;
+            background: white;
+            text-align: right;
+            font-size: 14px;
+            width: 145px;
+            height: 23px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            border: solid 1px #787878;
+            padding: 5px;
+            direction: rtl;
+            color: black;
+        }
+
+        #background {
+            background-image: url(landing.jpg);
+            background-repeat: no-repeat;
+            width: 720px;
+            height: 960px;
+            margin: auto;
+            display: block;
+            z-index: 10;
+        }
+
+        #container {
+            position: absolute;
+        }
+
+        #lead {
+
+            position: absolute;
+            top: 285px;
+            left: 0px;
+        }
+
+        .name {
+            position: absolute;
+            top: 591px;
+            left: 513px;
+        }
+
+        .phone {
+            position: absolute;
+            top: 591px;
+            left: 352px;
+        }
+
+        .email {
+            position: absolute;
+            top: 591px;
+            left: 192px;
+        }
+
+        #btn {
+            position: absolute;
+            top: 633px;
+            left: 193px;
+        }
+
+        #call {
+            position: absolute;
+            top: 800px;
+            left: 411px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+<div id="background">
+
+    <div id="container">
+
+        <div id="call">
+            <a href="tel:0722439439"><img src="call.jpg" width="243px" alt=""
+                                          onClick="goog_report_conversion('tel:0722439439')"/></a>
+        </div>
+
+
+        <div id="lead">
+
+            <form action="http://valead.co.il/form/process.php" method="post" onsubmit="return validate_form(this)">
+                <input type="hidden" name="form_tools_form_id" value="97"/>
+
+                <input class="input name" dir="rtl" id="Text1" size="14" type="text" name="name" placeholder="שם"
+                       value=""/>
+                <input class="input phone" dir="rtl" id="Text4" size="14" type="text" name="phone" placeholder="טלפון"
+                       value=""/>
+                <input class="input email" dir="rtl" id="Text2" size="14" type="text" name="email" placeholder="אימייל"
+                       value=""/>
+
+                <input id="btn" width="200px" type="image" src="btn.png" alt="שלח פרטים"/>
+                <input type="hidden" name="source" value="דף נחיתה מחשב"/>
+                <input value="" type="hidden" name="utm_campaign" id="utm_campaign">
+                <input value="" type="hidden" name="utm_medium" id="utm_medium">
+                <input value="" type="hidden" name="utm_content" id="utm_content">
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    (function () {
+        var a = window.location.search.match(/utm_content=([^&]*)/);
+        document.getElementById("utm_content").value = a[1];
+    })();
+</script>
+<script>
+    (function () {
+        var a = window.location.search.match(/utm_campaign=([^&]*)/);
+        document.getElementById("utm_campaign").value = a[1];
+    })();
+</script>
+<script>
+    (function () {
+        var a = window.location.search.match(/utm_medium=([^&]*)/);
+        document.getElementById("utm_medium").value = a[1];
+    })();
+</script>
+
+
+<script type="text/javascript">
+
+    function validate_required(field, alerttxt) {
+        with (field) {
+            if (value == null || value == "") {
+                alert(alerttxt);
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+    }
+
+    function validate_form(thisform) {
+
+        Text1 = document.getElementById('Text1').value
+        Text4 = document.getElementById('Text4').value
+        var button = document.getElementById('btn');
+        button.disabled = true;
+
+        if (Text1 == null || Text1 == "" || Text1 == "*שם מלא") {
+            document.getElementById('Text1').focus();
+            alert('נא למלא שם מלא');
+            button.disabled = false;
+            return false;
+        }
+
+        if (Text4 == null || Text4 == "" || Text4 == "*טלפון נייד") {
+            document.getElementById('Text4').focus();
+            alert('נא למלא טלפון נייד תקין');
+            button.disabled = false;
+            return false;
+        }
+
+    }
+
+</script>
+
+
+<!-- Facebook Conversion Code for Guy Koren Leads -->
+
+<script>
+    (function () {
+
+        var _fbq = window._fbq || (window._fbq = []);
+
+        if (!_fbq.loaded) {
+
+            var fbds = document.createElement('script');
+
+            fbds.async = true;
+
+            fbds.src = '//connect.facebook.net/en_US/fbds.js';
+
+            var s = document.getElementsByTagName('script')[0];
+
+            s.parentNode.insertBefore(fbds, s);
+
+            _fbq.loaded = true;
+
+        }
+
+    })();
+
+    window._fbq = window._fbq || [];
+
+    window._fbq.push(['track', '6039773635574', {'value': '0.00', 'currency': 'USD'}]);
+
+</script>
+
+<noscript><img height="1" width="1" alt="" style="display:none"
+               src="https://www.facebook.com/tr?ev=6039773635574&amp;cd[value]=0.00&amp;cd[currency]=USD&amp;noscript=1"/>
+</noscript>
+
+<!-- Facebook Pixel Code -->
+
+<script>
+
+    !function (f, b, e, v, n, t, s) {
+        if (f.fbq)return;
+        n = f.fbq = function () {
+            n.callMethod ?
+
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq)f._fbq = n;
+
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+    }(window,
+
+            document, 'script', '//connect.facebook.net/en_US/fbevents.js');
+
+
+    fbq('init', '1481353988780997');
+
+    fbq('track', "PageView");</script>
+
+<noscript><img height="1" width="1" style="display:none"
+
+               src="https://www.facebook.com/tr?id=1481353988780997&ev=PageView&noscript=1"
+
+        /></noscript>
+
+<!-- End Facebook Pixel Code -->
+</body>
+</html>

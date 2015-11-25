@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>פיזיקה לפי גיא קורן - לחשוב מחוץ לכתה</title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="description" content="מרכז המשתלה בתל אביב הוקם במטרה לתת מסגרת לימודית והענקת כלים יישומיים ללמידה עצמאית ומשמעותית" />
+<meta name="keywords" content="גיא קורן" />
+
+<meta property="og:title" content="פיזיקה לפי גיא קורן - לחשוב מחוץ לכתה" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="" />
+<meta property="og:url" content="" />
+<meta property="og:description" content="מרכז המשתלה בתל אביב הוקם במטרה לתת מסגרת לימודית והענקת כלים יישומיים ללמידה עצמאית ומשמעותית" />
+
+<style  type="text/css">
+    
+html, body
+{
+    margin: 0 auto;
+    display: block;
+	background-color: #e8e8e8;
+    }
+
+.input {
+font-family: Arial;
+background: white;
+text-align: right;
+font-size: 14px;
+width: 400px;
+height: 25px;
+-moz-border-radius: 0px;
+border-radius: 0px;
+border: solid 0px black;
+padding: 5px;
+direction: rtl;
+color: black;
+}
+
+#background
+{
+    background-image:url(landing.jpg);
+	background-repeat:no-repeat;
+	width:720px;
+	height:960px;
+	margin: auto;
+  display: block;
+  z-index: 10;
+}
+
+#container
+    {
+       position: absolute;
+    }
+
+
+#lead
+{
+position: absolute;
+    top: 863px;
+    left: 170px;
+    width: 350px;
+    direction: rtl;
+    text-align: right;
+    font-size: 20px;
+    padding-bottom: 46px;
+}
+
+#call
+{
+    position:absolute;
+    top: 800px;
+    left: 411px;
+}
+
+
+</style>
+</head>
+
+<body> 
+
+<div id="background">
+
+<div id="container">
+
+<div id="call">
+<a href="tel:0722439439"><img src="call.jpg" width="243px" alt="" onClick="goog_report_conversion('tel:0722439439')"/></a> 
+</div>
+
+
+<div id="lead">
+
+תודה רבה על פנייתך. נחזור אליך בהקדם.
+
+</div>
+</div> 
+</div>
+
+<script>
+(function() {
+  var a = window.location.search.match(/utm_content=([^&]*)/);  document.getElementById("utm_content").value = a[1];})();
+</script>
+<script>
+(function() {
+  var a = window.location.search.match(/utm_campaign=([^&]*)/);  document.getElementById("utm_campaign").value = a[1];})();
+</script>
+<script>
+(function() {
+  var a = window.location.search.match(/utm_medium=([^&]*)/);  document.getElementById("utm_medium").value = a[1];})();
+</script>
+
+
+<script type="text/javascript">
+
+function validate_required(field, alerttxt) {
+    with (field) {
+        if (value == null || value == "") {
+            alert(alerttxt);
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+}
+
+function validate_form(thisform) {
+
+    Text1 = document.getElementById('Text1').value
+    Text4 = document.getElementById('Text4').value
+    var button = document.getElementById('btn');
+    button.disabled = true;
+    
+    if (Text1 == null || Text1 == "" || Text1 == "*שם מלא") {
+        document.getElementById('Text1').focus();
+        alert('נא למלא שם מלא');
+        button.disabled = false;
+        return false;
+    }
+
+    if (Text4 == null || Text4 == "" || Text4 == "*טלפון נייד") {
+        document.getElementById('Text4').focus();
+        alert('נא למלא טלפון נייד תקין');
+        button.disabled = false;
+        return false;
+    }
+        
+}
+
+</script>
+
+</body>
+s</html>
